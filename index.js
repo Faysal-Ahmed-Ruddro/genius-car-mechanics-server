@@ -61,6 +61,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+app.get("/hello", (req,res)=>{
+  res.send("Hello Heroku ")
+})
 app.listen(port, () => {
   console.log("Running Server on port", port);
 });
